@@ -1,0 +1,6 @@
+الحل المقترح للنقطة الثانية:
+echo "Positive count = $(cat IMDB\ Dataset.csv | grep positive | wc -l)" > analysis.txt
+الحل المقترح للنقطة الثالثة:
+echo "Negative count = $(cat IMDB\ Dataset.csv | grep negative | wc -l)" >> analysis.txt
+الحل المقترح للنقطة الرابعة:
+echo "Total unique words = $(tr -sc 'A-Za-z' '\012' < IMDB\ Dataset.csv | sort | uniq | wc -l)" >> analysis.txt 
